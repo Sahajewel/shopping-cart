@@ -1,6 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Products from "./pages/Products";
+import Cart from "./pages/Cart";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Products />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
     </div>

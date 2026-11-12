@@ -10,7 +10,7 @@ export default function ProductCard({ product }: { product: Product }) {
         alt={product.title}
         className="h-48 w-full object-contain"
       />
-      <h2 className="mt-3 line-clamp-2 font-semibold">{product.title}</h2>
+      <h2 className="mt-3  font-semibold line-clamp-1">{product.title}</h2>
       <p className="mt-1 text-lg font-bold text-blue-600">{product.price}</p>
       <button
         onClick={() => dispatch({ type: "ADD", payload: product })}
